@@ -12,8 +12,12 @@ const postSlice = createSlice({
     getListPostSuccess(state, action) {
       state.listPost = action.payload;
     },
+    getListPostFailure(state) {
+      state.listPost = initialState.listPost;
+    },
   },
 });
 
-export const { getListPostRequest, getListPostSuccess } = postSlice.actions;
+export const { getListPostRequest, getListPostSuccess, getListPostFailure } =
+  postSlice.actions;
 export default postSlice.reducer;

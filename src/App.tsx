@@ -13,7 +13,7 @@ const App = () => {
   }, [dispatch]);
 
   return (
-    <div>
+    <div className="p-3">
       <div className="row">
         {listPost.map((post: any) => (
           <div className="col-md-3 col-12">
